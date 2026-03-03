@@ -8,7 +8,7 @@ function positionPrincess(level) {
   const rect = moodStrip.getBoundingClientRect();
   const step = rect.width / 6;
   const x = (level - 1) * step;
-  const y = (level - 80px)
+  const y = (level - 800px)
 
 }
 
