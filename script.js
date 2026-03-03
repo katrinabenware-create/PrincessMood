@@ -10,7 +10,7 @@ function positionPrincess(level) {
   const left = rect.left + window.scrollX;
   const step = rect.width / 6; // 6 gaps between 7 positions
   const x = (level - 1) * step; // 0..width
-  const bottom: -10px;
+  const bottom: -80px;
   princess.style.left = (x + 0.5 * step) + 'px';
 
 }
