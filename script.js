@@ -5,15 +5,18 @@ const princess = document.getElementById('princess');
 const moodStrip = document.getElementById('moodStrip');
 
 function positionPrincess(level) {
-  // level is 1..7; compute x position along the moodStrip image width
   const rect = moodStrip.getBoundingClientRect();
-  const left = rect.left + window.scrollX;
-  const step = rect.width / 6; // 6 gaps between 7 positions
-  const x = (level - 1) * step; // 0..width
-  bottom: -80px;
+  const step = rect.width / 6;
+  const x = (level - 1) * step;
+
+  // Horizontal position
   princess.style.left = (x + 0.5 * step) + 'px';
 
-}
+  // Vertical position (choose ONE of the following approaches)
+
+  // Using bottom: more negative moves it further down
+  princess.style.bottom = '-60px';
+
 
 }
 
