@@ -12,10 +12,8 @@ function positionPrincess(level) {
   // Horizontal position
   princess.style.left = (x + 0.5 * step) + 'px';
 
-  // Vertical position (choose ONE of the following approaches)
-
   // Using bottom: more negative moves it further down
-  princess.style.bottom = '-60px';
+  princess.style.bottom = '-120px';
 
 
 }
