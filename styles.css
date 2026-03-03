@@ -1,0 +1,13 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #222; background: #fff; }
+header { text-align:center; padding: 24px 12px; }
+header h1 { font-size: clamp(28px, 4vw, 48px); margin: 0; }
+.chart-wrap { max-width: 1000px; margin: 0 auto; padding: 16px; }
+.mood-chart { position: relative; display: block; width: 100%; max-width: 980px; margin: 0 auto 24px; }
+.mood-chart img#moodStrip { width: 100%; height: auto; display: block; }
+.mood-chart img#princess { position: absolute; width: min(16vw, 220px); bottom: -10px; left: 0; transform: translateX(-50%); pointer-events: none; filter: none; }
+.slider-wrap { width: min(840px, 92%); margin: 0 auto; }
+#slider { width: 100%; }
+.ticks { display: flex; justify-content: space-between; font-size: 12px; color: #777; padding-top: 6px; }
+footer { text-align:center; color: #888; padding: 16px; font-size: 12px; }
