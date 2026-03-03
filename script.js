@@ -8,13 +8,7 @@ function positionPrincess(level) {
   const rect = moodStrip.getBoundingClientRect();
   const step = rect.width / 6;
   const x = (level - 1) * step;
-
-  // Horizontal position
-  princess.style.left = (x + 0.5 * step) + 'px';
-
-  // Using bottom: more negative moves it further down
-  princess.style.bottom = '-120px';
-
+  const y = (level - 80px
 
 }
 
