@@ -4,21 +4,21 @@ const slider = document.getElementById('slider');
 const princess = document.getElementById('princess');
 const moodStrip = document.getElementById('moodStrip');
 
+
 function positionPrincess(level) {
-  // level is 1..7; compute x position along the moodStrip image width
-  const rect = moodStrip.getBoundingClientRect();
-  const left = rect.left + window.scrollX;
-  const step = rect.width / 6; // 6 gaps between 7 positions
-  const x = (level - 1) * step; // 0..width
+  // Horizontal: 7 stops across the mood image
+  const stripRect = moodStrip.getBoundingClientRect();
+  const step = stripRect.width / 6;           // 6 gaps for 7 positions
+  const x = (level - 1) * step;
   princess.style.left = (x + 0.5 * step) + 'px';
 
-  
-// Vertical: directly BELOW the slider
+  // Vertical: directly BELOW the slider
   const sliderRect = slider.getBoundingClientRect();
   const stageRect  = stage.getBoundingClientRect();
   const offset = 16;                           // tweak spacing below slider
   princess.style.top = (sliderRect.bottom - stageRect.top + offset) + 'px';
 }
+
 
  
 function setLevel(level, {broadcast=true} = {}) {
