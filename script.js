@@ -15,7 +15,7 @@ function positionPrincess(level) {
   // Vertical: directly BELOW the slider
   const sliderRect = slider.getBoundingClientRect();
   const stageRect  = stage.getBoundingClientRect();
-  const offset = 16;                           // tweak spacing below slider
+  const offset = 0;                           // tweak spacing below slider
   princess.style.top = (sliderRect.bottom - stageRect.top + offset) + 'px';
 }
 
