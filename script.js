@@ -10,12 +10,12 @@ function positionPrincess(level) {
   const stripRect = moodStrip.getBoundingClientRect();
   const step = stripRect.width / 6;           // 6 gaps for 7 positions
   const x = (level - 1) * step;
-  princess.style.left = (x + 0.5 * step) + 'px';
+  princess.style.left = (x * step) + 'px';
 
   // Vertical: directly BELOW the slider
   const sliderRect = slider.getBoundingClientRect();
   const stageRect  = stage.getBoundingClientRect();
-  const offset = 0;                           // tweak spacing below slider
+  const offset = -50;                           // tweak spacing below slider
   princess.style.top = (sliderRect.bottom - stageRect.top + offset) + 'px';
 }
 
